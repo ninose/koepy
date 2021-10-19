@@ -7,7 +7,8 @@ def main():
     while True:
         process_count = 0
         try:
-            token = "202110190820108197223d0b3ce74d5034e32af916d0ed28187f8e48e1bfbc"
+            #your token
+            token = "your token"
             client = KoeClient(auth_token=token)
 
             feed = client.get_feed(100)
