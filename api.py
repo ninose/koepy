@@ -7,9 +7,6 @@ class KoeClient():
         'Content-Type': 'application/x-www-form-urlencoded',
         'Accept-Language': 'ja-JP;q=1',
         'Accept': 'application/json',
-        'Accept': '*/*',
-        'Accept-Language': 'ja-jp',
-        'Content-Type': 'application/x-www-form-urlencoded',
         'Accept-Encoding': 'gzip, deflate, br',
     }
 
