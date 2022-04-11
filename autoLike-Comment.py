@@ -16,12 +16,11 @@ def main():
                 like = client.feed_like(feed_id)
                 comment = client.feed_comment(feed_id)
                 process_count += 1
-                print("like {} \n comment {} \n count {}".format(
-                    like, comment, process_count))
+                print(f"like {like} \n comment {comment} \n count {process_count}")
             if process_count%100==0:
                 continue
         except:
-            print(f"error: {like}, {feed}")
+            print(f"error: like {like},comment {comment},feed {feed}")
             time.sleep(100)
 
 if __name__ == "__main__":
