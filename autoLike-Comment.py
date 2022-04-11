@@ -4,13 +4,12 @@ from koepy import KoeClient
 
 
 def main():
+     #your token
+     token = "your token"
+     client = KoeClient(auth_token=token)
     while True:
         process_count = 0
         try:
-            #your token
-            token = "your token"
-            client = KoeClient(auth_token=token)
-
             feed = client.get_feed(100)
             feed_id_list = [i["id"] for i in feed["data"]["feed_posts"]]
             for feed_id in feed_id_list:
@@ -22,7 +21,7 @@ def main():
             if process_count%100==0:
                 continue
         except:
-            print("エラーだよ＞＜")
+            print(f"error: {like}, {feed}")
             time.sleep(100)
 
 if __name__ == "__main__":
